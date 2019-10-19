@@ -1,0 +1,42 @@
+#header nav {
+  grid-area: 1/2/1/2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 1em;
+}
+
+#header nav li {
+  list-style: none;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#header nav li::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+#header nav li a,
+#header nav li a:link {
+  text-decoration: none;
+}
+
+#header nav li a::before,
+#header nav li a:link::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 0.5em;
+}
+
+#header nav li.blog a::before,
+#header nav li.blog a:link::before {
+  content: '\f0c9';
+}
+
+#header nav li:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+}
