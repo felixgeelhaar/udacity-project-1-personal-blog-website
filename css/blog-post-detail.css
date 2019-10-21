@@ -1,0 +1,22 @@
+#blogpost-detail {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  margin: 1em 0;
+  background-color: #eee;
+}
+
+.blogpost-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blogpost-content > img {
+  min-width: 100%;
+  height: auto;
+  width: 100%;
+}
