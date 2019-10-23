@@ -26,22 +26,17 @@ h4,
 h5,
 h6 {
   color: #404041;
-  margin: 0;
+  margin: 0.5em 0;
 }
 
 h1 {
   font-family: Monoton, sans-serif;
-  font-size: 2em;
-}
-
-b {
-}
-
-em {
+  font-size: 4em;
 }
 
 img {
   min-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -55,8 +50,9 @@ a:link {
   background-color: #404041;
 }
 
-#featured {
-  border-bottom: 1px solid #404041;
+#featured,
+#introduction {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #introduction {
@@ -69,8 +65,8 @@ a:link {
 
 #intro-pic {
   min-width: 100px;
-  height: auto;
   width: 100px;
+  height: auto;
 }
 
 #intro-text {
@@ -80,19 +76,13 @@ a:link {
 }
 
 #content {
-  padding: 0 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#content > h1 {
-  margin: 0.5em 0;
+  padding: 0 1.5em;
 }
 
 #blogpost-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
 }
 
 #footer {
@@ -106,4 +96,16 @@ a:link {
 #footer a:link {
   color: #d2d1b5;
   text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  #introduction {
+    flex-direction: row;
+  }
+  #intro-text {
+    align-items: flex-start;
+  }
+  #blogpost-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -1,0 +1,46 @@
+.card {
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.card-header {
+  margin: 0.5em 0;
+}
+
+.card-body {
+  font-weight: 300;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-img-caption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #404041;
+  text-align: right;
+}
+
+.card-text {
+  font-weight: 300;
+}
+
+.card-link {
+  color: turquoise;
+}
+
+.card-link:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
