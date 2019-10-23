@@ -1,0 +1,45 @@
+.card {
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  padding: 0.4em;
+  margin: 0.5em 0;
+}
+
+.card-body {
+  padding: 0.25em;
+}
+
+.card-img {
+  width: 20vw;
+  height: auto;
+}
+
+.card-img-caption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #404041;
+  text-align: right;
+}
+
+.card-text {
+  font-weight: 300;
+}
+
+.card-link {
+  color: turquoise;
+}
+
+.card-link:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    width: 25vw;
+  }
+}
